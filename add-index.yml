@@ -1,0 +1,7 @@
+---
+- name: Add index.html
+  hosts: all
+
+  tasks:
+  - name: Send index.html for content-root
+    command:
