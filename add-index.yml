@@ -1,7 +1,8 @@
 ---
 - name: Add index.html
   hosts: all
-
   tasks:
-  - name: Send index.html for content-root
-    command:
+  - name: Send index.html for Apache
+    copy:
+      src: index.html
+      dest: /var/www/html
